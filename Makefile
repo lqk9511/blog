@@ -11,6 +11,11 @@ dev: init
 # 打包发布
 build: clean
 	yarn run docs:build
-
+	# 开始推送gh-pages
+	$(info $(开始推送gh-pages))
+	bash deploy.sh
+	$(info $(清除dist文件))
+	# 清除dist文件
+	make clean
 clean:
-	rm -rf .vuepress/dist
+	rm -rf docs/.vuepress/dist

@@ -13,6 +13,8 @@
 - [cubic-bezier](https://cubic-bezier.com/)
 - [在线正则表达式测试](http://tool.oschina.net/regex/#)
 - [一款很好用的在线压缩工具](https://tinypng.com/)
+- [VuePress + github pages + Travis CI 教程](https://www.jianshu.com/p/a7435b8bc8bc)
+- [vue项目使用travis-ci自动部署到github](https://blog.csdn.net/qq_31126175/article/details/89353665)
 ## 团队
 - 京东 - [凹凸实验室](https://news.aotu.io/)
 - 腾讯 - [AlloyTeam|腾讯全端 AlloyTeam 团队](http://www.alloyteam.com/)
