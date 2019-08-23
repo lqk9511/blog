@@ -1,5 +1,6 @@
-title: Hello Vuepress
-description: Just playing around
+title: Jeff Lee
+description: 你的代码里有你读过的书和走过的路
+base: /blog/
 # 懂得都懂终身代号
 port: 9527
 head: 
