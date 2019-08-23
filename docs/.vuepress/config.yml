@@ -1,0 +1,36 @@
+title: Hello Vuepress
+description: Just playing around
+# 懂得都懂终身代号
+port: 9527
+head: 
+  # 注意这里是一个二维数组
+  -
+    - link
+    - rel: icon
+      href: /favicon.ico
+themeConfig: 
+  # 导航栏链接
+  nav:
+    - text: 前端
+      link: /web/
+    - text: 分享
+      link: /share/
+    - text: GitHub
+      link: https://github.com/LeeVillage
+  # 侧边栏
+  sidebar:
+    /web/: 
+      - title: 前端
+        collapsable: false
+        children:
+          - ''
+    /share/:
+      - title: 分享
+        collapsable: false
+        children:
+          - ''
+          - zsh
+          - git
+          - markdown
+          - vuepress
+
