@@ -61,6 +61,16 @@ git reset HEAD~
 # 回退到前面三个 commit 位置
 git reset HEAD^3
 ```
+## cherry-pick
+`git cherry-pick` 可以理解为**挑拣**获取某个分支的单次提交，并且作为一个新的 `commit` 引入到你当前操作分支上面。这个命令也是很有用滴～
+```sh
+# 基本格式
+git cherry-pick [<options>] <commit-id>
+# options
+# --quit 退出当前的cherry-pick序列
+# --continue 继续当前的cherry-pick序列
+# --abort 退出当前的cherry-pick序列 恢复当前分支到没有 pick 前状态
+```
 ## push
 在我们的工作里面都会有很多次的push：
 :::warning
