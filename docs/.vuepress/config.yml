@@ -10,6 +10,8 @@ head:
     - rel: icon
       href: /favicon.ico
 themeConfig: 
+  # 最后更新时间
+  lastUpdated: 最后更新时间
   # 导航栏链接
   nav:
     - text: 前端
@@ -17,7 +19,7 @@ themeConfig:
     - text: 分享
       link: /share/
     - text: GitHub
-      link: https://github.com/LeeVillage
+      link: https://github.com/lqk9511
   # 侧边栏
   sidebar:
     /web/: 
@@ -34,4 +36,20 @@ themeConfig:
           - git
           - markdown
           - vuepress
+  # repo: lqk9511/blog
+  docsRepo: lqk9511/blog
+  # git 源仓库 仓库分支
+  docsBranch: master 
+  # 仓库下的文件夹
+  docsDir: docs
+  # 编辑链接
+  editLinks: true,
+  # 链接字段
+  editLinkText: 帮助我改善这个页面
+  serviceWorker: 
+    updatePopup: 
+      #  刷新内容的弹窗
+      message: '发现新内容'
+      buttonText: '刷新'
+
 

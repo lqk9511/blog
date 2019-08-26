@@ -16,6 +16,7 @@
 - [VuePress + github pages + Travis CI 教程](https://www.jianshu.com/p/a7435b8bc8bc)
 - [vue项目使用travis-ci自动部署到github](https://blog.csdn.net/qq_31126175/article/details/89353665)
 - [Make 命令教程](https://www.kancloud.cn/kancloud/make-command/45596)[或者这个](https://www.kancloud.cn/kancloud/make-command/45596)
+- [Git飞行规则(Flight Rules)](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md)
 ## 团队
 - 京东 - [凹凸实验室](https://news.aotu.io/)
 - 腾讯 - [AlloyTeam|腾讯全端 AlloyTeam 团队](http://www.alloyteam.com/)
