@@ -4,8 +4,18 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "commit": "git cz"
   },
   "license": "MIT",
-  "author": "Mr.li"
+  "author": "Mr.li",
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog":"^3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
 }
