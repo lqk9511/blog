@@ -1,4 +1,4 @@
-# ZSH
+# Oh-My-Zsh
 ## 常用快捷键
 ```bash
 ctrl + a，移动到行首
