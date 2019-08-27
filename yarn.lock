@@ -58,11 +58,6 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-app-root-path@~2.2.0:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/app-root-path/-/app-root-path-2.2.1.tgz#d0df4a682ee408273583d43f6f79e9892624bc9a"
-  integrity sha512-91IFKeKk7FjfmezPKkwtaRvSpnUc4gDwPAjA1YZ9Gn0q0PPeW+vbeUsZuyDwjI7+QTHhcLen2v25fi/AmhvbJA==
-
 argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
@@ -270,14 +265,6 @@ commitizen@^4.0.3:
     shelljs "0.7.6"
     strip-bom "4.0.0"
     strip-json-comments "3.0.1"
-
-commitlint-config-cz@^0.12.1:
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/commitlint-config-cz/-/commitlint-config-cz-0.12.1.tgz#1d2fa261050b05370a5024a2ae537b8e74df4759"
-  integrity sha512-2LEVu3xhYWOgZAQ2unJCDmCVoMP0mWChhyF6fRU5XANP5+nv7axPnr7KJEGWQSvEdEIkjLXzf30Qlgodb0+wEw==
-  dependencies:
-    app-root-path "~2.2.0"
-    lodash.clonedeep "~4.5.0"
 
 component-emitter@^1.2.1:
   version "1.3.0"
@@ -902,11 +889,6 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
-
-lodash.clonedeep@~4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
-  integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
 
 lodash.map@^4.5.1:
   version "4.6.0"

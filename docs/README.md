@@ -1,7 +1,7 @@
 ---
 home: true
-# heroImage: /hero.png
-heroText: Hero 标题
+heroImage: https://raw.githubusercontent.com/lqk9511/gallery/master/blog/7536741377242532155.jpg
+heroText: 贫穷使我们相遇
 tagline: 你的代码里有你读过的书和走过的路
 actionText: 逛一逛 →
 actionLink: /web/

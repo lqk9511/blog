@@ -88,7 +88,7 @@ package.json 配置
   }
 ```
 下面是我走完整个 `git cz` 效果图：
-![img](/WX20190826-143811@2x.png)
+![img](https://raw.githubusercontent.com/lqk9511/gallery/master/blog/WX20190826-143811@2x.png)
 ### 自定义 Adapter
 如果 Angular 的规范不符合我们的实际，同样我们也可以通过 [cz-customizable](https://github.com/leonardoanalista/cz-customizable) 定制一套符合自己或者团队的规范。
 ```sh

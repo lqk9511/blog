@@ -43,7 +43,7 @@ git checkout -b hotfix/xxxx
 # coding...
 ```
 ## commit
-每次的`commit`最好还是要做commit内容格式化的（TODO: 后面我会补上这一块的具体内容）不要让别的看你的commit信息的时候都是~~update，更新，修复，新增，删除~~这些之类的太不明确的词语:triumph:，不说别人看到怎么样子，我是接受不了这样的提交信息的。
+每次的`commit`最好还是要做[commit内容格式化](https://lqk9511.github.io/blog/share/git-commit-message.html)的不要让别的看你的commit信息的时候都是~~update，更新，修复，新增，删除~~这些之类的太不明确的词语:triumph:，不说别人看到怎么样子，我是接受不了这样的提交信息的。
 ## 版本回退
 在我们的实际开发中总是会有各种各样的问题，那么我们就需要它了 `reset` 版本回退。
 ```sh

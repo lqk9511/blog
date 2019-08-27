@@ -18,6 +18,9 @@
 - [Make 命令教程](https://www.kancloud.cn/kancloud/make-command/45596)[或者这个](https://www.kancloud.cn/kancloud/make-command/45596)
 - [Git飞行规则(Flight Rules)](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md)
 - [yarn 姿势](https://yarnpkg.com/lang/zh-hans/docs/cli/)
+## 关于面试
+- [一名【合格】前端工程师的自检清单](https://juejin.im/post/5cc1da82f265da036023b628)
+- [五年面试，三年模拟](https://juejin.im/post/5ca0425e51882567ce181037)
 ## 团队
 - 京东 - [凹凸实验室](https://news.aotu.io/)
 - 腾讯 - [AlloyTeam|腾讯全端 AlloyTeam 团队](http://www.alloyteam.com/)
