@@ -18,6 +18,10 @@
 - [Make 命令教程](https://www.kancloud.cn/kancloud/make-command/45596)[或者这个](https://www.kancloud.cn/kancloud/make-command/45596)
 - [Git飞行规则(Flight Rules)](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md)
 - [yarn 姿势](https://yarnpkg.com/lang/zh-hans/docs/cli/)
+- [免费的可商业使用的图片素材](https://www.zhihu.com/question/21757507)
+- [同一台电脑需要同时配置github和gitlab](https://github.com/xirong/my-git/blob/master/use-gitlab-github-together.md)
+## 书籍
+[语雀书籍](https://www.yuque.com/advanced-frontend/summary/yb4ko1)
 ## 关于面试
 - [一名【合格】前端工程师的自检清单](https://juejin.im/post/5cc1da82f265da036023b628)
 - [五年面试，三年模拟](https://juejin.im/post/5ca0425e51882567ce181037)

@@ -27,6 +27,7 @@ themeConfig:
         collapsable: false
         children:
           - ''
+          - viewport
     /share/:
       - title: 分享
         collapsable: false
