@@ -13,7 +13,7 @@ sidebarDepth: 2
 >来自于 [PPK(Peter-Paul Koch)](https://twitter.com/ppk) 关于 viewport 的三个观点（[so~1](https://www.quirksmode.org/mobile/viewports.html),[so~2](https://www.quirksmode.org/mobile/viewports2.html),[so~3](https://www.quirksmode.org/mobile/metaviewport/)），有很多文章的观点都出自那里（包括本文）。
 - **layout viewport**（布局视区）：在移动端浏览器上面，视觉视区限制了布局视区，为了能在移动设备上正常显示那些为pc端浏览器设计的网站，移动设备上的浏览器都会把自己默认的 viewport 设为980px或其他值，一般都比移动端浏览器可视区域大很多，所以就会出现浏览器出现横向滚动条的情况 。布局视区的宽度是可以用 `document.documentElement.clientWidth` 来获取。上一张偷来的图，帮助理解。![img](https://raw.githubusercontent.com/lqk9511/gallery/master/blog/552720562-569ef61a18464_articlex.png)
 - **visual viewport**（视觉视区）：用户透过窗口可以看到的内容区域的大小，用户可以以滑动或者其他的方式来查看页面其他内容，通过 `window.screen.width` 来获取它的宽度，同样上一张偷来的图，帮助理解。![img](https://raw.githubusercontent.com/lqk9511/gallery/master/blog/3629381303-5aed280720e97_articlex.png)
-- **ideal viewport**（理想视区）：在我们理想的状态下面，比如说有一段14 px 的文字，或者是其他的页面内容，无论在什么设备下面都展现出差不多的大小。ideal viewport 并没有一个固定的尺寸，不同的设备拥有有不同的 ideal viewport。所有的 iphone 的ideal viewport宽度都是320px，无论它的屏幕宽度是320还是640，也就是说，在 iphone 中，css 中的320px就代表 iphone 屏幕的宽度。但是安卓设备就比较复杂了，有320px的，有360px的，有384px的等等。（）
+- **ideal viewport**（理想视区）：在我们理想的状态下面，比如说有一段14 px 的文字，或者是其他的页面内容，无论在什么设备下面都展现出差不多的大小。ideal viewport 并没有一个固定的尺寸，不同的设备拥有有不同的 ideal viewport。所有的 iphone 的ideal viewport宽度都是320px，无论它的屏幕宽度是320还是640，也就是说，在 iphone 中，css 中的320px就代表 iphone 屏幕的宽度。但是安卓设备就比较复杂了，有320px的，有360px的，有384px的等等。
 ## 如何使用 Viewport
 ### 利用 meta 标签设置 viewport
 ```html
@@ -26,6 +26,7 @@ sidebarDepth: 2
 - `minimum-scale`：允许用户缩放到的最大比例。
 - `maximum-scale`：允许用户缩放到的最小比例。
 - `user-scalable`：用户是否可以手动缩放。
+
 所以说上面的那段代码的意思就是：设置页面的 layout viewport 等于 ideal viewport 宽度，初始化的页面缩放比为1，用户最大/最小的缩放比都为1，页面不允许用户手动缩放。
 ### 代码里面的书写方式
 vw单位换算： 视口宽度为 100vw 占满整个视口区域，那么 1vw 相当于占整个视口宽度的1%，所以 1px= 1/375*100 vw 所有的页面元素都可以直接进行计算换算成 vw 单位，但是这样计算和百分比方案计算比较类似，都会比较麻烦。
