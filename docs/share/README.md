@@ -21,7 +21,9 @@
 - [免费的可商业使用的图片素材](https://www.zhihu.com/question/21757507)
 - [同一台电脑需要同时配置github和gitlab](https://github.com/xirong/my-git/blob/master/use-gitlab-github-together.md)
 ## 书籍
-[语雀书籍](https://www.yuque.com/advanced-frontend/summary/yb4ko1)
+- [语雀书籍](https://www.yuque.com/advanced-frontend/summary/yb4ko1)
+- [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/index.html)
+- [程序员的自我修养](https://leohxj.gitbooks.io/a-programmer-prepares/content/index.html)
 ## 关于面试
 - [一名【合格】前端工程师的自检清单](https://juejin.im/post/5cc1da82f265da036023b628)
 - [五年面试，三年模拟](https://juejin.im/post/5ca0425e51882567ce181037)
