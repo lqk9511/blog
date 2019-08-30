@@ -59,7 +59,7 @@ git reset --hard [commit id]
 # 没有加 --hard 则保存 commit 状态就是 status
 git reset HEAD~
 # 回退到前面三个 commit 位置
-git reset HEAD^3
+git reset HEAD~3
 ```
 ## cherry-pick
 `git cherry-pick` 可以理解为**挑拣**获取某个分支的单次提交，并且作为一个新的 `commit` 引入到你当前操作分支上面。这个命令也是很有用滴～
