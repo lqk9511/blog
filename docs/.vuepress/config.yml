@@ -28,6 +28,7 @@ themeConfig:
         children:
           - ''
           - viewport
+          - upgrade
     /share/:
       - title: 分享
         collapsable: false
