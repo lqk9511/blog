@@ -8,6 +8,10 @@ init:
 dev: init
 	yarn run docs:dev
 
+# 提交commit message
+commit:
+	yarn commit
+	
 # 打包发布
 build: clean
 	yarn run docs:build

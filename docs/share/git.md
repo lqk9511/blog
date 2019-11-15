@@ -23,6 +23,19 @@ git remote origin set-url [url]
 # 这都记不住！（跟我一样）
 # 修改config文件吧
 ```
+## Git 同步远程分支
+```sh
+# 查看本地和远程所有分支
+git branch -a
+# 查看本地分支
+git branch
+# 删除远程分支
+git push origin --delete 分支名
+# 删除本地分支
+git branch -d 分支名
+# 本地更新远程分支，并且删除远程已经删除过的分支
+git fetch --all --prune
+```
 ## 开发新需求
 记得从**最新的**`master`分支中切出来一个新的分支出去开发
 ```sh {1}
@@ -70,6 +83,17 @@ git cherry-pick [<options>] <commit-id>
 # --quit 退出当前的cherry-pick序列
 # --continue 继续当前的cherry-pick序列
 # --abort 退出当前的cherry-pick序列 恢复当前分支到没有 pick 前状态
+```
+## 删除某次commit提交
+```sh
+# 找到想要删除commit的前一次提交的commit id
+# 记住是前一次的commit id
+git rebase -i 前一次提交的commit id
+# 在弹出的vim编辑中
+# 将要删除的commit id 前面的 pick 修改为 drop
+# 保存退出
+# git log 查看已经删除了
+# 这里如果需要强推可以强推
 ```
 ## push
 在我们的工作里面都会有很多次的push：
