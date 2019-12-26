@@ -20,6 +20,8 @@
 - [yarn 姿势](https://yarnpkg.com/lang/zh-hans/docs/cli/)
 - [免费的可商业使用的图片素材](https://www.zhihu.com/question/21757507)
 - [同一台电脑需要同时配置github和gitlab](https://github.com/xirong/my-git/blob/master/use-gitlab-github-together.md)
+- [可以为你的包提供一个很棒的摘要](https://packagephobia.now.sh/result?p=%40jeff9511%2Fstylelint-config-jeff)
+- [时髦徽章](https://shields.io/)
 ## 书籍
 - [语雀书籍](https://www.yuque.com/advanced-frontend/summary/yb4ko1)
 - [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/index.html)
