@@ -17,7 +17,7 @@ themeConfig:
       link: /web/
     - text: 分享
       link: /share/
-    - text: 分享
+    - text: 面试
       link: /interview/
     - text: GitHub
       link: https://github.com/lqk9511
