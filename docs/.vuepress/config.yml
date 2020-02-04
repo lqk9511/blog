@@ -3,13 +3,12 @@ description: 你的代码里有你读过的书和走过的路
 base: /blog/
 # 懂得都懂终身代号
 port: 9527
-head: 
+head:
   # 注意这里是一个二维数组
-  -
-    - link
+  - - link
     - rel: icon
       href: /favicon.ico
-themeConfig: 
+themeConfig:
   # 最后更新时间
   lastUpdated: 最后更新时间
   # 导航栏链接
@@ -18,41 +17,46 @@ themeConfig:
       link: /web/
     - text: 分享
       link: /share/
+    - text: 分享
+      link: /interview/
     - text: GitHub
       link: https://github.com/lqk9511
   # 侧边栏
   sidebar:
-    /web/: 
+    /web/:
       - title: 前端
         collapsable: false
         children:
-          - ''
+          - ""
           - viewport
           - upgrade
     /share/:
       - title: 分享
         collapsable: false
         children:
-          - ''
+          - ""
           - zsh
           - git
           - git-commit-message
           - markdown
           - vuepress
+    /interview/:
+      - title: 面试
+        collapsable: false
+        children:
+          - ""
   # repo: lqk9511/blog
   docsRepo: lqk9511/blog
   # git 源仓库 仓库分支
-  docsBranch: master 
+  docsBranch: master
   # 仓库下的文件夹
   docsDir: docs
   # 编辑链接
   editLinks: true,
   # 链接字段
   editLinkText: 帮助我改善这个页面
-  serviceWorker: 
-    updatePopup: 
+  serviceWorker:
+    updatePopup:
       #  刷新内容的弹窗
-      message: '发现新内容'
-      buttonText: '刷新'
-
-
+      message: "发现新内容"
+      buttonText: "刷新"
