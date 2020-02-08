@@ -6,6 +6,7 @@
 2.  [`['1', '2', '3'].map(parseInt)` what & why ?](./question/2.md)
 3.  [什么是防抖和节流？有什么区别？如何实现？](./question/3.md)
 4.  [介绍下 Set、Map、WeakSet 和 WeakMap 的区别？](./question/4.md)
+5.  [介绍下深度优先遍历和广度优先遍历，如何实现？](./question/5.md)
 
 ---
 
