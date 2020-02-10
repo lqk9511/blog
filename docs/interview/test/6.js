@@ -11,6 +11,13 @@ const typeMap = {
 const isTypeof = (obj, type) =>
   Object.prototype.toString.call(obj).slice(8, -1) === typeMap[type];
 
+function getEmpty(o) {
+  // console.log(o); // 可以看到每次循环的值
+  if (isTypeof(o, "object")) return {};
+  if (isTypeof(o, "array")) return [];
+  return o;
+}
+
 const testTarget = {
   name: "jeff",
   tree: {
@@ -91,5 +98,72 @@ function dfsDeepClone(target, verifyArr = []) {
   return result;
 }
 
-const dfsDeepCloneResult = dfsDeepClone(testTarget);
-console.log(JSON.stringify(dfsDeepCloneResult));
+function dfsDeepClone2(target) {
+  let result = getEmpty(target); // 返回值
+  let stack = []; // 循环队列
+  let recordMap = new Map();
+  if (target !== result) {
+    // 说明是引用类型
+    stack.push([target, result]);
+    recordMap.set(target, result);
+  }
+
+  while (stack.length) {
+    let [tar, res] = stack.pop();
+    for (const key in tar) {
+      let element = tar[key];
+      // 判断是否是环数据
+      if (recordMap.has(element)) {
+        res[key] = recordMap.get(element);
+        continue;
+      }
+      // 赋值 getEmpty 里面会返回不是引用类型的值
+      res[key] = getEmpty(tar[key]);
+      // 判断结果值 推入队列
+      if (res[key] !== tar[key]) {
+        stack.push([tar[key], res[key]]);
+        // 添加记录
+        recordMap.set(tar[key], res[key]);
+      }
+    }
+  }
+  return result;
+}
+
+// const dfsDeepCloneResult = dfsDeepClone2(testTarget);
+// console.log(JSON.stringify(dfsDeepCloneResult));
+
+// 广度优先思想
+function bfsDeepClone(target) {
+  let result = getEmpty(target); // 返回值
+  let queue = []; // 循环队列
+  let recordMap = new Map(); // 记录循环引用变量 解决环数据问题
+  if (result !== target) {
+    queue.push([target, result]);
+    recordMap.set(target, result);
+  }
+
+  while (queue.length) {
+    let [tar, res] = queue.shift();
+    for (const key in tar) {
+      let element = tar[key];
+      // 判断环引用
+      if (recordMap.has(element)) {
+        res[key] = recordMap.get(element);
+        continue;
+      }
+      // 判断目标值
+      res[key] = getEmpty(tar[key]);
+      // 如果得到结果值跟目标值不一样 添加队列 循环
+      if (res[key] !== tar[key]) {
+        queue.push([tar[key], res[key]]);
+        // 添加记录
+        recordMap.set(tar[key], res[key]);
+      }
+    }
+  }
+  return result;
+}
+
+const bfsDeepCloneResult = bfsDeepClone(testTarget);
+console.log(JSON.stringify(bfsDeepCloneResult));
