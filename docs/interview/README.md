@@ -7,6 +7,7 @@
 3.  [什么是防抖和节流？有什么区别？如何实现？](./question/3.md)
 4.  [介绍下 Set、Map、WeakSet 和 WeakMap 的区别？](./question/4.md)
 5.  [介绍下深度优先遍历和广度优先遍历，如何实现？](./question/5.md)
+6.  [请分别用深度优先思想和广度优先思想实现一个拷贝函数？](./question/6.md)
 
 ---
 
