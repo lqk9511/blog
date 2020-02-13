@@ -9,7 +9,8 @@
 5.  [介绍下深度优先遍历和广度优先遍历，如何实现？](./question/5.md)
 6.  [请分别用深度优先思想和广度优先思想实现一个拷贝函数？](./question/6.md)
 7.  [ES5/ES6 的继承除了写法以外还有什么区别？](./question/7.md)
-8.  [question:setTimeout、Promise、Async/Await 的区别？](./question/8.md)
+8.  [setTimeout、Promise、Async/Await 的区别？](./question/8.md)
+9.  [Async/Await 如何通过同步的方式实现异步？](./question/9.md)
 
 ---
 
