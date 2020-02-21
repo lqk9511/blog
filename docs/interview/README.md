@@ -24,6 +24,7 @@
 13. [Promise 构造函数是同步执行还是异步执行，那么 then 方法呢？](./question/13.md)
 14. [情人节福利题，如何实现一个 new](./question/14.md)
 15. [简单讲解一下 http2 的多路复用](./question/15.md)
+16. [谈谈你对 TCP 三次握手和四次挥手的理解](./question/16.md)
 
 ---
 
