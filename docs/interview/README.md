@@ -26,6 +26,7 @@
 15. [简单讲解一下 http2 的多路复用](./question/15.md)
 16. [谈谈你对 TCP 三次握手和四次挥手的理解](./question/16.md)
 17. [A、B 机器正常连接后，B 机器突然重启，问 A 此时处于 TCP 什么状态?](./question/17.md)
+18. [React 中 setState 什么时候是同步的，什么时候是异步的？](./question/18.md)
 
 ---
 
