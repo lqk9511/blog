@@ -40,6 +40,7 @@ themeConfig:
           - git-commit-message
           - markdown
           - vuepress
+          - git-pull--rebase--autostash
     /interview/:
       - title: 面试
         collapsable: false
