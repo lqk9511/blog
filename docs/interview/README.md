@@ -40,6 +40,7 @@
 24. [聊聊 Redux 和 Vuex 的设计思想](./question/24.md)
 25. [说说浏览器和 Node 事件循环的区别](./question/25.md)
 26. [介绍模块化发展历程](./question/26.md)
+27. [全局作用域中，用 const 和 let 声明的变量不在 window 上，那到底在哪里？如何去获取？](./question/27.md)
 
 ---
 
