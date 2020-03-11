@@ -20,7 +20,7 @@
 - [Make 命令教程](https://www.kancloud.cn/kancloud/make-command/45596)[或者这个](https://www.kancloud.cn/kancloud/make-command/45596)
 - [Git 飞行规则(Flight Rules)](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md)
 - [Git 姿势在线学习](https://learngitbranching.js.org/)
-- [yarn 姿势](https://yarnpkg.com/lang/zh-hans/docs/cli/)
+- [yarn 姿势](https://classic.yarnpkg.com/zh-Hans/docs/cli)
 - [免费的可商业使用的图片素材](https://www.zhihu.com/question/21757507)
 - [同一台电脑需要同时配置 github 和 gitlab](https://github.com/xirong/my-git/blob/master/use-gitlab-github-together.md)
 - [可以为你的包提供一个很棒的摘要](https://packagephobia.now.sh/result?p=%40jeff9511%2Fstylelint-config-jeff)
