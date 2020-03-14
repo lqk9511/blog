@@ -27,25 +27,26 @@ themeConfig:
       - title: 前端
         collapsable: false
         children:
-          - ""
+          - ''
           - viewport
           - upgrade
     /share/:
       - title: 分享
         collapsable: false
         children:
-          - ""
+          - ''
           - zsh
           - git
           - git-commit-message
           - markdown
           - vuepress
+          - web-download
           - git-pull--rebase--autostash
     /interview/:
       - title: 面试
         collapsable: false
         children:
-          - ""
+          - ''
   # repo: lqk9511/blog
   docsRepo: lqk9511/blog
   # git 源仓库 仓库分支
@@ -59,5 +60,5 @@ themeConfig:
   serviceWorker:
     updatePopup:
       #  刷新内容的弹窗
-      message: "发现新内容"
-      buttonText: "刷新"
+      message: '发现新内容'
+      buttonText: '刷新'
