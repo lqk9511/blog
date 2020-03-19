@@ -60,6 +60,15 @@
     ```
 
 32. [介绍一下 http 常用状态码](./question/32.md)
+33. [下面的代码打印什么内容，为什么？](./question/33.md)
+
+    ```js
+    var b = 10
+    ;(function b() {
+      b = 20
+      console.log(b)
+    })()
+    ```
 
 ---
 

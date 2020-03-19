@@ -1,6 +1,9 @@
 # 工作中 Git 飞行姿势
-记录使用git的一些姿势，没那么细节，但都是一些工作中常用的。
+
+记录使用 git 的一些姿势，没那么细节，但都是一些工作中常用的。
+
 ## 配置用户名称和邮箱
+
 ```sh
 # 全局设置
 git config --global user.name "username"
@@ -9,11 +12,14 @@ git config --global user.email "username@email.com"
 git config --local user.name "username"
 git config --local user.email "username@email.com"
 ```
+
 ## 修改远程仓库地址
+
 因为我每次忘记命令，结果都去改文件里面地址:joy:好气呀。
+
 ```sh
 # 查看
-git remote show origin 
+git remote show origin
 # 直接命令添加
 # 如果存在则要先删除
 git remote rm origin
@@ -23,7 +29,9 @@ git remote origin set-url [url]
 # 这都记不住！（跟我一样）
 # 修改config文件吧
 ```
+
 ## Git 同步远程分支
+
 ```sh
 # 查看本地和远程所有分支
 git branch -a
@@ -36,8 +44,11 @@ git branch -d 分支名
 # 本地更新远程分支，并且删除远程已经删除过的分支
 git fetch --all --prune
 ```
+
 ## 开发新需求
+
 记得从**最新的**`master`分支中切出来一个新的分支出去开发
+
 ```sh {1}
 # 拉取master分支最新的代码
 git pull --rebase
@@ -45,8 +56,11 @@ git pull --rebase
 git checkout -b feature/xxxx
 # coding...
 ```
+
 ## 解决某问题
+
 记得从**最新的**`master`分支中切出来一个新的分支出去开发
+
 ```sh {1}
 # 拉取master分支最新的代码
 git pull --rebase
@@ -55,13 +69,18 @@ git checkout -b hotfix/xxxx
 # git checkout -b fix/xxxx
 # coding...
 ```
+
 ## commit
-每次的`commit`最好还是要做[commit内容格式化](https://lqk9511.github.io/blog/share/git-commit-message.html)的不要让别的看你的commit信息的时候都是~~update，更新，修复，新增，删除~~这些之类的太不明确的词语:triumph:，不说别人看到怎么样子，我是接受不了这样的提交信息的。
+
+每次的`commit`最好还是要做[commit 内容格式化](https://lqk9511.github.io/blog/share/git-commit-message.html)的不要让别的看你的 commit 信息的时候都是~~update，更新，修复，新增，删除~~这些之类的太不明确的词语:triumph:，不说别人看到怎么样子，我是接受不了这样的提交信息的。
+
 ## 版本回退
+
 在我们的实际开发中总是会有各种各样的问题，那么我们就需要它了 `reset` 版本回退。
+
 ```sh
 # 对于本地的 commit 还没有提交到远程分支
-# 首先看一下我们的 commit id 
+# 首先看一下我们的 commit id
 git log
 # 复制你想要回退的commit id
 # --soft 保存文件状态到 添加暂存区后
@@ -74,8 +93,11 @@ git reset HEAD~
 # 回退到前面三个 commit 位置
 git reset HEAD~3
 ```
+
 ## cherry-pick
+
 `git cherry-pick` 可以理解为**挑拣**获取某个分支的单次提交，并且作为一个新的 `commit` 引入到你当前操作分支上面。这个命令也是很有用滴～
+
 ```sh
 # 基本格式
 git cherry-pick [<options>] <commit-id>
@@ -84,7 +106,9 @@ git cherry-pick [<options>] <commit-id>
 # --continue 继续当前的cherry-pick序列
 # --abort 退出当前的cherry-pick序列 恢复当前分支到没有 pick 前状态
 ```
-## 删除某次commit提交
+
+## 删除某次 commit 提交
+
 ```sh
 # 找到想要删除commit的前一次提交的commit id
 # 记住是前一次的commit id
@@ -95,11 +119,14 @@ git rebase -i 前一次提交的commit id
 # git log 查看已经删除了
 # 这里如果需要强推可以强推
 ```
+
 ## push
-在我们的工作里面都会有很多次的push：
+
+在我们的工作里面都会有很多次的 push：
 :::warning
 每次的推送请保证当前分支是最新的代码
 :::
+
 ```sh
 # 基本格式
 git push <远程主机名> <本地分支名>:<远程分支名>
@@ -120,15 +147,19 @@ git push --force-with-lease
 # 没有option 默认推送当前分支到远程 规则同上前面几条
 git push
 ```
-## 代码rebase
-当我们经历过漫长的开发周期的时候，这个需求分支终于开发完毕，可以上线了，但是我们从来都没有 `rebase` 过我们的代码。其实是建议在需求分支上面每天结束的时候`git rebase master`**同样也要保证master是最新的**，你会问什么是？为什么要？
+
+## 代码 rebase
+
+当我们经历过漫长的开发周期的时候，这个需求分支终于开发完毕，可以上线了，但是我们从来都没有 `rebase` 过我们的代码。其实是建议在需求分支上面每天结束的时候`git rebase master`**同样也要保证 master 是最新的**，你会问什么是？为什么要？
 :::warning
 当然建议是在一个新的分支上面坚持这么做，否则最后的 rebase 可能会使你感到有点崩溃（当有很多次的 commit ）。
 :::
-1. 会让你知道你和master分支具体会有那些冲突，这些冲突会由你自己解决，而不是在你提MR的时候，由合并者去解决存在的代码冲突。
+
+1. 会让你知道你和 master 分支具体会有那些冲突，这些冲突会由你自己解决，而不是在你提 MR 的时候，由合并者去解决存在的代码冲突。
 2. 同时也会加快工作的效率。
-3. master上面的版本时间线会是一条笔直漂亮的线，而不是很杂乱，同时也利于版本回退。
+3. master 上面的版本时间线会是一条笔直漂亮的线，而不是很杂乱，同时也利于版本回退。
 4. 总的来说利大于弊（每天 rebase 会浪费时间？）
+
 ```sh
 # 在 master 分支拉取最新代码
 git pull --rebase
@@ -138,7 +169,7 @@ git rebase master
 # 开始 rebase 过程中容易出现的问题
 # 代码冲突 rebase 就会停止下来 当前的分支会停在一个临时的分支上面让你解决冲突（不要慌） 没有什么大的问题 正常解决冲突 完事记得 git add .
 # 继续 rebase
-git rebase --continue 
+git rebase --continue
 # 如果还有冲突 还会循环上面步骤
 # 还有就是 rebase 过程中停在了临时分支上面 你去 idea 上面看的时候 也没有发现什么冲突的 这时候就应该跳过这个了
 git rebase --skip
@@ -150,6 +181,9 @@ git rebase --abort
 # 当 rebase 完成的时候 当前分支会自动切回来 剩下的就是我上面讲到的
 git push --force-with-lease
 ```
+
 ## merge
+
 到这里基本上就可以开心去提 MR 啦～
 
+> [Git 飞行规则(Flight Rules)](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md)
