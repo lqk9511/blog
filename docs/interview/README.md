@@ -60,7 +60,8 @@
     ```
 
 32. [介绍一下 http 常用状态码](./question/32.md)
-33. [下面的代码打印什么内容，为什么？](./question/33.md)
+33. [:question:Virtual DOM 真的比操作原生 DOM 快吗？谈谈你的想法。](./question/33.md)
+34. [下面的代码打印什么内容，为什么？](./question/34.md)
 
     ```js
     var b = 10
@@ -69,6 +70,18 @@
       console.log(b)
     })()
     ```
+
+35. [简单改造下面的代码，使之分别打印 10 和 20。](./question/35.md)
+
+    ```js
+    var b = 10
+    ;(function b() {
+      b = 20
+      console.log(b)
+    })()
+    ```
+
+36. [聊聊浏览器读取缓存策略](./question/36.md)
 
 ---
 
