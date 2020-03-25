@@ -83,6 +83,7 @@
 
 36. [聊聊浏览器读取缓存策略](./question/36.md)
 37. [使用迭代的方式实现 flatten 函数](./question/37.md)
+38. [为什么 Vuex 的 mutation 和 Redux 的 reducer 中不能做异步操作？](./question/38.md)
 
 ---
 

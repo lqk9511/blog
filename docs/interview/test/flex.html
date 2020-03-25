@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+      }
+      .box .left {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .box .right {
+        /* flex: 1 0 auto; */
+        flex: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="left">
+        的撒谎的开始看的撒谎的开始看的撒谎的开始看的撒谎的开始看的撒谎的开始看的撒谎的开始看的撒谎的开始看的撒谎的开始看的撒谎的开始看
+      </div>
+      <div class="right">（你要这样）</div>
+    </div>
+    <div class="box">
+      <div class="left">
+        的撒谎的开始看的撒谎的
+      </div>
+      <div class="right">（你要这样）</div>
+    </div>
+    <script>
+      //  flex ： flex-grow | flex-shrink | flex-basis 组合的
+      // `flex-grow`：默认 0 存在空间也不放大 1 回放大，2会比一大一倍
+      // `flex-shrink`：默认是 1 空间不足，该项目将缩小。 当它为 0 时候，其他为 1 他不缩小
+      // `flex-basis`：默认 auto 意思就是这个定义大小的在flex计算大小的时候会减去这个定义的大小
+      // 我们通常定义的 `flex: 默认;` 其实就是 `flex: 0 1 auto;`
+      // 我们通常定义的 `flex: auto;` 其实就是 `flex: 1 1 auto;`
+      // 我们通常定义的 `flex: none;` 其实就是 `flex: 0 0 auto;`
+      // 我们通常定义的 `flex: 1;` 其实就是 `flex: 1 1 0%;`
+      // 我们通常定义的 `flex: 24px;` 其实就是 `flex: 1 1 24px;`
+    </script>
+  </body>
+</html>
