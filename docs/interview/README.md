@@ -103,6 +103,23 @@
 
     如果修改了，Vue 是如何监控到属性的修改并给出警告的。
 
+42. [下面代码输出什么？](./question/42.md)
+
+    ```js
+    var a = 10
+    ;(function() {
+      console.log(a)
+      a = 5
+      console.log(window.a)
+      var a = 20
+      console.log(a)
+    })()
+    ```
+
+43. [实现一个 sleep 函数](./question/43.md)
+
+    比如 sleep(1000) 意味着等待 1000 毫秒，可从 Promise、Generator、Async/Await 等角度实现
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
