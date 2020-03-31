@@ -1,6 +1,6 @@
 # 前端面试题
 
-刷题，同时丰富自己。
+刷题，同时丰富自己。每日一题，或者几题，提神又醒脑 🧠。
 
 ## 1-10
 
@@ -60,7 +60,7 @@
     ```
 
 32. [介绍一下 http 常用状态码](./question/32.md)
-33. [:question:Virtual DOM 真的比操作原生 DOM 快吗？谈谈你的想法。](./question/33.md)
+33. [Virtual DOM 真的比操作原生 DOM 快吗？谈谈你的想法。](./question/33.md)
 34. [下面的代码打印什么内容，为什么？](./question/34.md)
 
     ```js
@@ -121,6 +121,8 @@
     比如 sleep(1000) 意味着等待 1000 毫秒，可从 Promise、Generator、Async/Await 等角度实现
 
 44. [使用 sort() 对数组 [3, 15, 8, 29, 102, 22] 进行排序，输出结果](./question/44.md)
+
+45. [介绍 HTTPS 握手过程](./question/45.md)
 
 ---
 
