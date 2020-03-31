@@ -124,6 +124,8 @@
 
 45. [介绍 HTTPS 握手过程](./question/45.md)
 
+46. [HTTPS 握手过程中，客户端如何验证证书的合法性](./question/46.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
