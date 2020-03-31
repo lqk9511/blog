@@ -120,6 +120,8 @@
 
     比如 sleep(1000) 意味着等待 1000 毫秒，可从 Promise、Generator、Async/Await 等角度实现
 
+44. [使用 sort() 对数组 [3, 15, 8, 29, 102, 22] 进行排序，输出结果](./question/44.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
