@@ -141,6 +141,6 @@
     console.log(obj)
     ```
 
----
+48. [双向绑定和 vuex 是否冲突](./question/48.md)
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
