@@ -126,6 +126,21 @@
 
 46. [HTTPS 握手过程中，客户端如何验证证书的合法性](./question/46.md)
 
+47. [输出以下代码执行的结果并解释为什么](./question/47.md)
+
+    ```js
+    var obj = {
+      '2': 3,
+      '3': 4,
+      length: 2,
+      splice: Array.prototype.splice,
+      push: Array.prototype.push
+    }
+    obj.push(1)
+    obj.push(2)
+    console.log(obj)
+    ```
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
