@@ -143,4 +143,6 @@
 
 48. [双向绑定和 vuex 是否冲突](./question/48.md)
 
+49. [call 和 apply 的区别是什么，哪个性能更好一些](./question/49.md)
+
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
