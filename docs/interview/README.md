@@ -146,4 +146,10 @@
 49. [call 和 apply 的区别是什么，哪个性能更好一些](./question/49.md)
 50. [为什么通常在发送数据埋点请求的时候使用的是 1x1 像素的透明 gif 图片？](./question/50.md)
 
+---
+
+## 51-60
+
+51. [ 实现 (5).add(3).minus(2) 功能](./question/51.md)
+
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
