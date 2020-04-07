@@ -156,4 +156,6 @@
 52. [Vue 的响应式原理中 Object.defineProperty 有什么缺陷？](./question/52.md)
     为什么在 Vue3.0 采用了 Proxy，抛弃了 Object.defineProperty？
 
+53. [怎么让一个 div 水平垂直居中](./question/53.md)
+
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
