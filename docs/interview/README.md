@@ -158,4 +158,15 @@
 
 53. [怎么让一个 div 水平垂直居中](./question/53.md)
 
+54. [输出以下代码的执行结果并解释为什么](./question/54.md)
+
+    ```js
+    var a = { n: 1 }
+    var b = a
+    a.x = a = { n: 2 }
+
+    console.log(a.x)
+    console.log(b.x)
+    ```
+
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
