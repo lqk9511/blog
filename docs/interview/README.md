@@ -171,4 +171,8 @@
 
 55. [冒泡排序如何实现，时间复杂度是多少， 还可以如何改进？](./question/55.md)
 
+56. [某公司 1 到 12 月份的销售额存在一个对象里面](./question/56.md)
+
+    如下：{1:222, 2:123, 5:888}，请把数据处理为如下结构：[222, 123, null, null, 888, null, null, null, null, null, null, null]。
+
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
