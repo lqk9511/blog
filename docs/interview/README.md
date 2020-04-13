@@ -175,6 +175,10 @@
 
     如下：{1:222, 2:123, 5:888}，请把数据处理为如下结构：[222, 123, null, null, 888, null, null, null, null, null, null, null]。
 
-57. [某公司 1 到 12 月份的销售额存在一个对象里面](./question/56.md)
+57. [某公司 1 到 12 月份的销售额存在一个对象里面](./question/57.md)
+
+58. [分析比较 opacity: 0、visibility: hidden、display: none 优劣和适用场景](./question/58.md)
+
+---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
