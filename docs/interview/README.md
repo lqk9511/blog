@@ -179,6 +179,8 @@
 
 58. [分析比较 opacity: 0、visibility: hidden、display: none 优劣和适用场景](./question/58.md)
 
+59. [箭头函数与普通函数（function）的区别是什么？构造函数（function）可以使用 new 生成实例，那么箭头函数可以吗？为什么？](./question/59.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
