@@ -199,6 +199,8 @@
 
 64. [模拟实现一个 Promise.finally](./question/64.md)
 
+65. [`a.b.c.d` 和 `a['b']['c']['d']`，哪个性能更高？](./question/65.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
