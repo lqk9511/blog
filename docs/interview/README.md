@@ -197,6 +197,8 @@
 
 63. [redux 中的 reducer 为什么最好是纯函数](./question/63.md)
 
+64. [模拟实现一个 Promise.finally](./question/64.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
