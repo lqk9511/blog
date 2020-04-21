@@ -201,6 +201,8 @@
 
 65. [`a.b.c.d` 和 `a['b']['c']['d']`，哪个性能更高？](./question/65.md)
 
+66. [ES6 代码转成 ES5 代码的实现思路是什么](./question/66.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
