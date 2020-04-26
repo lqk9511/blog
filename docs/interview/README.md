@@ -215,4 +215,12 @@
 
 ---
 
+## 71 -80
+
+71. [ 为什么普通 for 循环的性能远远高于 forEach 的性能，请解释其中的原因。](./question/71.md)
+
+    ![for foreach diff](https://user-gold-cdn.xitu.io/2019/7/9/16bd43ff465c90a0?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+---
+
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
