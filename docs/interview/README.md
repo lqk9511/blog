@@ -217,9 +217,11 @@
 
 ## 71 -80
 
-71. [ 为什么普通 for 循环的性能远远高于 forEach 的性能，请解释其中的原因。](./question/71.md)
+71. [为什么普通 for 循环的性能远远高于 forEach 的性能，请解释其中的原因。](./question/71.md)
 
     ![for foreach diff](https://user-gold-cdn.xitu.io/2019/7/9/16bd43ff465c90a0?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+72. [介绍下 BFC、IFC、GFC 和 FFC ](./question/72.md)
 
 ---
 
