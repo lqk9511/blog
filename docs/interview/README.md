@@ -221,7 +221,9 @@
 
     ![for foreach diff](https://user-gold-cdn.xitu.io/2019/7/9/16bd43ff465c90a0?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
-72. [介绍下 BFC、IFC、GFC 和 FFC ](./question/72.md)
+72. [介绍下 BFC、IFC、GFC 和 FFC](./question/72.md)
+
+73. [使用 JavaScript Proxy 实现简单的数据绑定](./question/73.md)
 
 ---
 
