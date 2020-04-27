@@ -225,6 +225,8 @@
 
 73. [使用 JavaScript Proxy 实现简单的数据绑定](./question/73.md)
 
+74. [数组里面有 10 万个数据，取第一个元素和第 10 万个元素的时间相差多少](./question/74.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
