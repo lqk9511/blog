@@ -227,6 +227,30 @@
 
 74. [数组里面有 10 万个数据，取第一个元素和第 10 万个元素的时间相差多少](./question/74.md)
 
+75. [输出以下代码运行结果](./question/75.md)
+
+    ```js
+    // example 1
+    var a={}, b='123', c=123;
+    a[b]='b';
+    a[c]='c';
+    console.log(a[b]);
+
+    ---------------------
+    // example 2
+    var a={}, b=Symbol('123'), c=Symbol('123');
+    a[b]='b';
+    a[c]='c';
+    console.log(a[b]);
+
+    ---------------------
+    // example 3
+    var a={}, b={key:'123'}, c={key:'456'};
+    a[b]='b';
+    a[c]='c';
+    console.log(a[b]);
+    ```
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
