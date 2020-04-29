@@ -251,6 +251,8 @@
     console.log(a[b]);
     ```
 
+76. [Vue 的父组件和子组件生命周期钩子执行顺序是什么](./question/76.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
