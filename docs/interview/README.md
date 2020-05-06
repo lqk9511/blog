@@ -255,6 +255,8 @@
 
 77. [input 搜索如何防抖，如何处理中文输入](./question/77.md)
 
+78. [介绍下 Promise.all 使用、原理实现及错误处理](./question/78.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
