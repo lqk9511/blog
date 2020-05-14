@@ -15,3 +15,22 @@
 // }
 
 // console.log(longestPalindrome('civilwartestingwhe'))
+
+/**
+ * @param {number} x
+ * @return {number}
+ */
+var reverse = function (x) {
+  let res = 0
+  const max = 0x7fffffff,
+    min = -0x80000000
+
+  while (x != 0) {
+    res = res * 10 + (x % 10)
+    x = parseInt(x / 10)
+    if (res > max - 1 || res < min) return 0
+  }
+  return res
+}
+
+console.log(reverse(123))
