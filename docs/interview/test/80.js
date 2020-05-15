@@ -17,7 +17,7 @@ function moveZeroToLast(arr) {
   return arr
 }
 
-console.log(moveZeroToLast(arr2))
+// console.log(moveZeroToLast(arr2))
 
 function moveZeroToLast2(arr) {
   // 零出现个数
