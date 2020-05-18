@@ -364,6 +364,8 @@ let result = [
 ];
 ```
 
+85. [设计并实现 Promise.race()](./question/85.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
