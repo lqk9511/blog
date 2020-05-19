@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeff</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" @input="handleInput" />
+      <ul>
+        <li v-for="(item,index) in filterList" v-html="item.title"></li>
+      </ul>
+    </div>
+    <script>
+      function debounce(func, delay) {
+        if (!delay) delay = 300
+        let time = null
+        return function () {
+          if (time) clearTimeout(time)
+          time = setTimeout(() => {
+            if (func) func.apply(this, arguments)
+          }, delay)
+        }
+      }
+
+      let handleInput = debounce(function (e) {
+        console.log('handleInput -> e', e.target.value)
+        const _val = e.target.value
+        const reg = new RegExp(`(${_val})`, 'g')
+        this.filterList = this.testList.reduce((pre, cur) => {
+          if (cur.title.indexOf(_val) >= 0) {
+            pre.push({
+              ...cur,
+              title: cur.title.replace(
+                reg,
+                '<span style="color:red;">$1</span>'
+              ),
+            })
+          }
+          return pre
+        }, [])
+      })
+
+      var app = new Vue({
+        el: '#app',
+        data: {
+          testList: [
+            { id: 1, title: '我是1号，我是小李' },
+            { id: 2, title: '我是2号，我是小张' },
+            { id: 3, title: '我是3号，我是小熊' },
+            { id: 4, title: '我是4号，我就是我' },
+          ],
+          filterList: [],
+        },
+        methods: {
+          handleInput,
+        },
+      })
+    </script>
+  </body>
+</html>

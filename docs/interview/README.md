@@ -366,6 +366,8 @@ let result = [
 
 85. [设计并实现 Promise.race()](./question/85.md)
 
+86. [实现模糊搜索结果的关键词高亮显示](./question/86.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
