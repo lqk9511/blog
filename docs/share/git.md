@@ -186,4 +186,13 @@ git push --force-with-lease
 
 到这里基本上就可以开心去提 MR 啦～
 
+## 扩展
+
+查看当前分支所有提交者及其提交次数，按次数由高到低排序
+具体命令如下：
+
+```shell
+git log | grep "^Author: " | awk '{print \$2}' | sort | uniq -c | sort -k1,1nr
+```
+
 > [Git 飞行规则(Flight Rules)](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md)
