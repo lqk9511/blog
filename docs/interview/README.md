@@ -370,6 +370,8 @@ let result = [
 
 87. [介绍下 HTTPS 中间人攻击](./question/87.md)
 
+88. [已知数据格式，实现一个函数 fn 找出链条中所有的父级 id](./question/88.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
