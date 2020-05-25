@@ -1,6 +1,3 @@
-# :question: ES5 实现 ES6 class extends 过程
-
-```js
 function inherit(sub, Super) {
   sub.prototype = Object.create(Super.prototype, {
     constructor: {
@@ -41,4 +38,3 @@ child.say()
 
 let child2 = new Sub('rose', 16)
 // child2.work()
-```
