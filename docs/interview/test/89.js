@@ -33,7 +33,7 @@ Sub.prototype.work = function () {
   console.log(`I like Coding`)
 }
 
-// child.play()
+child.play()
 child.say()
 
 let child2 = new Sub('rose', 16)
