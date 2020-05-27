@@ -372,6 +372,28 @@ let result = [
 
 88. [已知数据格式，实现一个函数 fn 找出链条中所有的父级 id](./question/88.md)
 
+89. [ES5 实现 ES6 class extends 过程](./question/89.md)
+
+90. [给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。请找出这两个有序数组的中位数。要求算法的时间复杂度为 O(log(m+n))](./question/90.md)
+
+示例 1：
+
+```js
+nums1 = [1, 3]
+nums2 = [2]
+```
+
+中位数是 2.0
+
+示例 2：
+
+```js
+nums1 = [1, 2]
+nums2 = [3, 4]
+```
+
+中位数是 (2+3) / 2 = 2.5
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
