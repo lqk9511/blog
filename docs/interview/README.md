@@ -400,6 +400,8 @@ nums2 = [3, 4]
 
 91. [vue 在 v-for 时给每项元素绑定事件需要用事件代理吗？为什么？](./question/91.md)
 
+92. [介绍下前端加密的常见场景和方法](./question/92.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
