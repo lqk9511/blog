@@ -402,6 +402,19 @@ nums2 = [3, 4]
 
 92. [介绍下前端加密的常见场景和方法](./question/92.md)
 
+93. [写出如下代码的打印结果](./question/93.md)
+
+    ```js
+    function changeObjProperty(o) {
+      o.siteUrl = 'http://www.baidu.com'
+      o = new Object()
+      o.siteUrl = 'http://www.google.com'
+    }
+    let webSite = new Object()
+    changeObjProperty(webSite)
+    console.log(webSite.siteUrl)
+    ```
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
