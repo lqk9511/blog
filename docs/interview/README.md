@@ -419,6 +419,28 @@
 
     > 用 JavaScript 写一个函数，输入 int 型，返回整数逆序后的字符串。如：输入整型 1234，返回字符串“4321”。要求必须使用递归函数调用，不能用全局变量，输入函数必须只有一个参数传入，必须返回字符串。
 
+95. [请写出如下代码的打印结果](./question/95.md)
+    ```js
+    function Foo() {
+      Foo.a = function () {
+        console.log(1)
+      }
+      this.a = function () {
+        console.log(2)
+      }
+    }
+    Foo.prototype.a = function () {
+      console.log(3)
+    }
+    Foo.a = function () {
+      console.log(4)
+    }
+    Foo.a()
+    let obj = new Foo()
+    obj.a()
+    Foo.a()
+    ```
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
