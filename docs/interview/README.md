@@ -420,6 +420,7 @@
     > 用 JavaScript 写一个函数，输入 int 型，返回整数逆序后的字符串。如：输入整型 1234，返回字符串“4321”。要求必须使用递归函数调用，不能用全局变量，输入函数必须只有一个参数传入，必须返回字符串。
 
 95. [请写出如下代码的打印结果](./question/95.md)
+
     ```js
     function Foo() {
       Foo.a = function () {
@@ -439,6 +440,27 @@
     let obj = new Foo()
     obj.a()
     Foo.a()
+    ```
+
+96. [输出以下代码运行结果，为什么？如果希望每隔 1s 输出一个结果，应该如何改造？注意不可改动 square 方法](./question/96.md)
+
+    ```js
+    const list = [1, 2, 3]
+    const square = (num) => {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve(num * num)
+        }, 1000)
+      })
+    }
+
+    function test() {
+      list.forEach(async (x) => {
+        const res = await square(x)
+        console.log(res)
+      })
+    }
+    test()
     ```
 
 ---
