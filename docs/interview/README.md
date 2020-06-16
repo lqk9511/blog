@@ -465,6 +465,8 @@
 
 97. [弹性盒子中 flex: 0 1 auto 表示什么意思？](./question/97.md)
 
+98. [如何实现骨架屏，说说你的思路？](./question/98.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
