@@ -467,6 +467,8 @@
 
 98. [如何实现骨架屏，说说你的思路？](./question/98.md)
 
+99. [接口如何防刷？](./question/99.md)
+
 ---
 
 > 部分题目来自于[前端 100 问](https://juejin.im/post/5d23e750f265da1b855c7bbe)
