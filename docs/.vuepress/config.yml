@@ -37,6 +37,7 @@ themeConfig:
           - ''
           - zsh
           - git
+          - git-flow
           - git-commit-message
           - markdown
           - vuepress
@@ -62,3 +63,5 @@ themeConfig:
       #  刷新内容的弹窗
       message: '发现新内容'
       buttonText: '刷新'
+markdown:
+  lineNumbers: true
