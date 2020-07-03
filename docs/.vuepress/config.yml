@@ -48,6 +48,7 @@ themeConfig:
         collapsable: false
         children:
           - ''
+          - leetcode
   # repo: lqk9511/blog
   docsRepo: lqk9511/blog
   # git 源仓库 仓库分支
