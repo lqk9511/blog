@@ -58,7 +58,6 @@ class Automaton {
   constructor() {
     this.INT_MAX = Math.pow(2, 31) - 1
     this.INT_MIN = Math.pow(-2, 31)
-    this.overflowSign = false
     this.status = 'start'
     this.signed = 1
     this.result = 0
@@ -80,24 +79,35 @@ class Automaton {
   get(str) {
     this.status = this.autoMap[this.status][this.getStatus(str)]
     if (this.status === 'number') {
-      this.result = +(this.result * 10 + str)
-      if (
-        (this.signed === -1 && this.result >= -this.INT_MIN) ||
-        this.result >= this.INT_MAX
-      ) {
-        this.overflowSign = true
-        this.result = this.signed * this.INT_MAX
-      }
+      this.result = this.result * 10 + +str
+      console.log('Automaton -> get -> this.result', this.result)
+      this.result = Math.min(
+        this.result,
+        this.signed == 1 ? this.INT_MAX : -this.INT_MIN
+      )
     }
 
     if (this.status === 'signed') {
       if (str === '-') this.signed = -1
+      else this.signed = 1
     }
   }
 }
 
-for (let index = 0; index < s.length; index++) {
-  const element = s[index]
-  console.log(element)
-  if (index == 4) return
+/**
+ * @param {string} str
+ * @return {number}
+ */
+var myAtoi = function (str) {
+  let automaton = new Automaton()
+  for (const s of str) {
+    automaton.get(s)
+  }
+  return automaton.signed * automaton.result
 }
+
+console.log('myAtoi', myAtoi('42'))
+console.log('myAtoi', myAtoi('-42'))
+console.log('myAtoi', myAtoi('42 asd'))
+console.log('myAtoi', myAtoi('asdas 42'))
+console.log('myAtoi', myAtoi('-9998899798798742'))
