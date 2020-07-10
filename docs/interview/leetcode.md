@@ -10,12 +10,18 @@
 
 - 🟥☠️ ：困难
 
-## 1-10
+::: tip 题号说明
+题号均为 [leetcode](https://leetcode-cn.com/) 真实题目序号
+:::
 
-8. 🟨🤬 [字符串转换整数 (atoi)](./leetcode/8.md)
+## [数字](./leetcode/number.md)<Badge text="2"/>
 
-9. 🟩🤔 [回文数](./leetcode/9.md)
+## [数学](./leetcode/mathematics.md)<Badge text="1"/>
 
----
+## [数组](./leetcode/array.md)<Badge text="1"/>
 
-0. 🟩🤔 🟨🤬 🟥☠️ [template 我希望你不要点](./leetcode/template.md)
+本系列所有题目链接：https://leetcode-cn.com/
+
+来源：力扣（LeetCode）
+
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
