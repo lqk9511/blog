@@ -20,6 +20,8 @@
 
 ## [数组](./leetcode/array.md)<Badge text="1"/>
 
+## [字符串](./leetcode/string.md)<Badge text="1"/>
+
 本系列所有题目链接：https://leetcode-cn.com/
 
 来源：力扣（LeetCode）
