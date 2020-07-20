@@ -10,6 +10,10 @@ var isMatch = function (s, p) {
 
   dp[0][0] = true
 
+  for (let j = 1; j < n + 1; j++) {
+    if (p[j - 1] == '*') dp[0][j] = dp[0][j - 2]
+  }
+
   for (let i = 1; i < m + 1; i++) {
     for (let j = 1; j < n + 1; j++) {
       if (s[i - 1] === p[j - 1] || p[j - 1] === '.') {
@@ -27,10 +31,12 @@ var isMatch = function (s, p) {
       console.log(dp.slice(2, 3).toString())
       console.log('-------------------------------')
     }
+
+    console.log('-------------next-------------')
   }
 
   console.log(dp)
   return dp[m][n]
 }
 
-console.log(isMatch('aa', '.*b*'))
+console.log(isMatch('aab', '*'))
