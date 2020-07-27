@@ -18,7 +18,7 @@
 
 ## [数学](./leetcode/mathematics.md)<Badge text="1"/>
 
-## [数组](./leetcode/array.md)<Badge text="1"/>
+## [数组](./leetcode/array.md)<Badge text="2"/>
 
 ## [字符串](./leetcode/string.md)<Badge text="1"/>
 
