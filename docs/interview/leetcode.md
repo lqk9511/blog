@@ -20,7 +20,7 @@
 
 ## [数组](./leetcode/array.md)<Badge text="2"/>
 
-## [字符串](./leetcode/string.md)<Badge text="1"/>
+## [字符串](./leetcode/string.md)<Badge text="2"/>
 
 本系列所有题目链接：https://leetcode-cn.com/
 
