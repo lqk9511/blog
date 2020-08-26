@@ -18,9 +18,9 @@
 
 ## [数学](./leetcode/mathematics.md)<Badge text="1"/>
 
-## [数组](./leetcode/array.md)<Badge text="2"/>
+## [数组](./leetcode/array.md)<Badge text="3"/>
 
-## [字符串](./leetcode/string.md)<Badge text="2"/>
+## [字符串](./leetcode/string.md)<Badge text="4"/>
 
 本系列所有题目链接：https://leetcode-cn.com/
 
