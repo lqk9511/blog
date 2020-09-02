@@ -25,7 +25,7 @@ git remote show origin
 git remote rm origin
 git remote add origin [url]
 # 命令修改
-git remote origin set-url [url]
+git remote set-url origin [url]
 # 这都记不住！（跟我一样）
 # 修改config文件吧
 ```
