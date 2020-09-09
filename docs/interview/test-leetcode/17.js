@@ -16,6 +16,8 @@ var letterCombinations = function (digits) {
   let res = [],
     digitsValue = []
 
+  if (!digits.length) return res
+
   for (let i = 0; i < digits.length; i++) {
     digitsValue.push(_map[digits[i]])
   }
