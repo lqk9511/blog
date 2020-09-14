@@ -43,6 +43,11 @@ themeConfig:
           - vuepress
           - web-download
           - git-pull--rebase--autostash
+    /flutter/:
+      - title: flutter
+        collapsable: false
+        children:
+          - web
     /interview/:
       - title: 面试
         collapsable: false
