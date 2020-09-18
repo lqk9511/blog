@@ -20,7 +20,57 @@ flutter create --template=app projectName
 
 同时，`flutter create --template= ` 支持 `app`，`module`，`package`和`plugin` 这四个参数。对应分别创建不同的项目，这里我们只介绍 app 项目，其余的会在之后的系列中会有单独讲述，这里提一句，我们与原生混合开发的模式，就是用的 module 模式。
 
+我们先看一下初始化项目后的目录文件
+
+`flutter create --template=app test_flutter_app`
+
+其实作为一个 web 开发者，初次看到这样的项目目录多少都会有点 `朦胧`，`node_modules` 呢？`package.json` 呢？
+
+```shell
+.
+├── README.md
+├── android # 安卓配置项目以及生成包文件
+│   ├── app
+│   ├── build.gradle
+│   ├── gradle
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── local.properties
+│   ├── settings.gradle
+│   └── testflutterapp_android.iml
+├── assets # 这个目录初始化的时候是没有的 用来放图片之类的资源
+├── build # 打包后才会有
+├── ios # ios配置项目以及生成包文件
+│   ├── Flutter
+│   ├── Runner
+│   ├── Runner.xcodeproj
+│   └── Runner.xcworkspace
+├── lib # 开发目录 主要写业务代码 .dart 文件
+│   └── main.dart # APP 入口文件
+├── pubspec.lock
+├── pubspec.yaml # 相当于 package.json
+├── test # 单元测试
+│   └── widget_test.dart
+└── testflutterapp.iml
+```
+
+而我们安装的插件包什么都被隐藏起来了，如果你用的 Android Studio 编辑器的话，在项目跟目录同级目录下面，会有一个 `External Libraries` 文件夹，里面会有一些项目依赖的一些信息。
+
+```shell
+.
+├── Dart Packages
+├── Dart SDk
+└── Flutter Plugins
+```
+
 ## 页面
+
+接下来就是我们把 app 跑起来，看看页面是什么样子的。记得别忘记先 `flutter pub get` 相当于 `npm install` 或者 `yarn` 一样的效果。
+
+运行后首页效果：
+
+<img src="https://github.com/lqk9511/gallery/blob/master/blog/flutter/flutter_web_1.png?raw=true" alt="flutter page" width="150px" >
 
 ## 元素
 
