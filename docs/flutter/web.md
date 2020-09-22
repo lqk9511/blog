@@ -102,7 +102,7 @@ class MyApp extends StatelessWidget {
 
 我们可以看到 `MyApp` 函数是返回了一个 `MaterialApp` 实例的，里面 home 参数传递的就是我们将要展示的首页 `MyHomePage` 类了。
 
-在这一块我们就着重看一下 `MyHomePage` 类的实现：
+在这一块我们就着重看一下 `MyHomePage` 类的实现（我们这里暂不说里面的逻辑实现）：
 
 ```dart
 class MyHomePage extends StatefulWidget {
@@ -151,7 +151,9 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 ```
 
-我们可以看到，整个页面都是在类中实现的包括页面的状态啊，还有事件上面的处理等，细心的同学可能已经发现了 `MyHomePage` 跟 `MyApp` 类实现的时候继承的类是不同的，分别是继承了 `StatelessWidget` , `StatefulWidget`。我是这么理解的，相当于 Web 里面的**无状态**纯展示组件，和**有状态**组件的分别。
+我们可以看到，其实跟传统的 Web 实现起来还是有差别的，整个页面都是在类中实现的包括页面的状态啊，还有事件上面的处理等，细心的同学可能已经发现了 `MyHomePage` 跟 `MyApp` 类实现的时候继承的类是不同的，分别是继承了 `StatelessWidget` , `StatefulWidget`。我是这么理解的，相当于 Web 里面的**无状态**纯展示组件，和**有状态**组件的分别。
+
+`Flutter` 项目里面随处可见这样的 `class` 实现，大家可能也看到了，在画页面的时候好像都是一级一级的嵌套下去的。没错！`Flutter` 里面万物都是 `Widget`，也就引出了下面说的 —— 元素 也能叫 `Widget`
 
 ::: details 点击查看完整代码
 
@@ -279,6 +281,79 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ## 元素
 
+这里说元素，其实我觉得不如直接叫 Widget，`Flutter` 里面的基础元素就是 `Widget`，就相当于 `Web` 里面各种个样的元素标签一样。
+
+```html
+<div></div>
+```
+
+那么这个一个基本的 Web 标签 在 Flutter 项目中怎么去写呢？
+
+```dart
+Container(child: null)
+```
+
+那么标签里面有别的元素标签呢？
+
+```html
+<div>我这里是HTML</div>
+```
+
+到 `Flutter` 项目
+
+```dart
+Container(child: Text('害，我这是Flutter'))
+```
+
+大家这里可以看到，在 `Flutter` 中 文本都是一个 `Text` `Widget` 对象实例来的。万物皆 `Widget` 由此可见一般。
+
+完整的页面也都是这么一层一层的相互嵌套起来的，刚刚开始写的时候，大家可能觉得别扭，但是写习惯了来说其实还好，而且在 IDE 里面每个 `Widget` 后面的括号都会跟上自己 `Widget` 的名字，也算是另一种优化吧。
+
 ## 跳转
 
-## 小结
+`Flutter` 路由跳转 跟 `Web` 中但页面应用的 `Route` 概念是相同的，同时会维护一个路由栈来进行管理，路由入栈(push)操作对应打开一个新页面，路由出栈(pop)操作对应页面关闭操作。
+
+```dart
+//导航到新路由
+Navigator.push( context,
+  MaterialPageRoute(builder: (context) {
+    return NewRoute();
+  }));
+```
+
+`Navigator` 是一个路由管理的组件，它提供了打开和退出路由页方法。`Navigator` 通过一个栈来管理活动路由集合。通常当前屏幕显示的页面就是栈顶的路由。`Navigator` 提供了一系列方法来管理路由栈。
+
+```dart
+// 退出当前页面 返回上一层
+Navigator.pop(context, "我是返回值")
+```
+
+还有一种方式是使用命名路由，需要我们先定义路由表，这就有点像我们写 `Web` 的 `Route` 定义的路由表一样。同样的我们也是要在 APP 启动的时候去注入定义的路由表：
+
+```dart
+MaterialApp(
+  title: 'Flutter Demo',
+  theme: ThemeData(
+    primarySwatch: Colors.blue,
+  ),
+  //注册路由表 也可以单独写一个文件
+  routes:{
+    "/":(context) => MyHomePage(title: 'Flutter Demo Home Page'), //注册首页路由
+    "new_page":(context) => NewRoute(),
+    ... // 省略其它路由注册信息
+  } ,
+  home: MyHomePage(title: 'Flutter Demo Home Page'),
+);
+```
+
+使用命名路由的时候，跳转的方法有一点区别，返回的还是那样子的。
+
+```dart
+  Navigator.pushNamed(context, "new_page"); // 后面也可以用 arguments 传递参数
+  //  Navigator.push(context,
+  //  MaterialPageRoute(builder: (context) {
+  //  return NewRoute();
+  //}));
+```
+
+## 写到最后
