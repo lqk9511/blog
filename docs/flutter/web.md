@@ -6,7 +6,7 @@
 
 ## 语言
 
-`JavaScript` 是一门弱类型语言或者说是一门动态化语言，可以给任何对象在任何时候动态扩展属性（这也是有利有弊的，比如太过于灵活导致代码很难预测等），而 `Flutter` 是使用 `Dart` 作为开发语言的，`Dart` 则是一门强类型的语言，如果你之前没有接触过 `TypeScript`，`CoffeeScript` 的话，那估计写的时候会处处飘红的，而且在 dart2.0 之后会强制开启类型检查，来帮助开发者减少错误。这就和`TypeScript`，`CoffeeScript`是差不多的。如果想要了解 Dart，可以去 Dart 官网学习，也可以去网上自己搜索都可以。
+`JavaScript` 是一门弱类型语言或者说是一门动态化语言，可以给任何对象在任何时候动态扩展属性（这也是有利有弊的，比如太过于灵活导致代码很难预测等），而 `Flutter` 是使用 `Dart` 作为开发语言的，`Dart` 则是一门强类型的语言，如果你之前没有接触过 `TypeScript`，`CoffeeScript` 的话，那估计写的时候会处处飘红的，而且在 `dart2.0` 之后会强制开启类型检查，来帮助开发者减少错误。这就和`TypeScript`，`CoffeeScript`是差不多的。如果想要了解 `Dart`，可以去 `Dart` 官网学习，也可以去网上自己搜索都可以。
 
 ## 工程化
 
@@ -41,7 +41,7 @@ flutter create --template=app projectName
 │   └── testflutterapp_android.iml
 ├── assets # 这个目录初始化的时候是没有的 用来放图片之类的资源
 ├── build # 打包后才会有
-├── ios # ios配置项目以及生成包文件
+├── ios # iOS配置项目以及生成包文件
 │   ├── Flutter
 │   ├── Runner
 │   ├── Runner.xcodeproj
@@ -151,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 ```
 
-我们可以看到，其实跟传统的 Web 实现起来还是有差别的，整个页面都是在类中实现的包括页面的状态啊，还有事件上面的处理等，细心的同学可能已经发现了 `MyHomePage` 跟 `MyApp` 类实现的时候继承的类是不同的，分别是继承了 `StatelessWidget` , `StatefulWidget`。我是这么理解的，相当于 Web 里面的**无状态**纯展示组件，和**有状态**组件的分别。
+我们可以看到，其实跟传统的 Web 实现起来还是有差别的，整个页面都是在类中实现的包括页面的状态啊，还有事件上面的处理等，细心的同学可能已经发现了 `MyHomePage` 跟 `MyApp` 类实现的时候继承的类是不同的，分别是继承了 `StatelessWidget` , `StatefulWidget`。我是这么理解的，相当于 Web 但页面应用比如 `Vue`，`React` 我们自己封装的**无状态**纯展示组件，和**有状态**组件的分别。
 
 `Flutter` 项目里面随处可见这样的 `class` 实现，大家可能也看到了，在画页面的时候好像都是一级一级的嵌套下去的。没错！`Flutter` 里面万物都是 `Widget`，也就引出了下面说的 —— 元素 也能叫 `Widget`
 
@@ -309,9 +309,11 @@ Container(child: Text('害，我这是Flutter'))
 
 完整的页面也都是这么一层一层的相互嵌套起来的，刚刚开始写的时候，大家可能觉得别扭，但是写习惯了来说其实还好，而且在 IDE 里面每个 `Widget` 后面的括号都会跟上自己 `Widget` 的名字，也算是另一种优化吧。
 
+![](https://github.com/lqk9511/gallery/blob/master/blog/flutter/WX20200923-174949@2x.png?raw=true)
+
 ## 跳转
 
-`Flutter` 路由跳转 跟 `Web` 中但页面应用的 `Route` 概念是相同的，同时会维护一个路由栈来进行管理，路由入栈(push)操作对应打开一个新页面，路由出栈(pop)操作对应页面关闭操作。
+`Flutter` 路由跳转 跟 `Web` 中单页面应用的 `Route` 概念是相同的，同时会维护一个路由栈来进行管理，路由入栈(push)操作对应打开一个新页面，路由出栈(pop)操作对应页面关闭操作。
 
 ```dart
 //  导航到新路由
