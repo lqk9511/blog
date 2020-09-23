@@ -314,7 +314,7 @@ Container(child: Text('害，我这是Flutter'))
 `Flutter` 路由跳转 跟 `Web` 中但页面应用的 `Route` 概念是相同的，同时会维护一个路由栈来进行管理，路由入栈(push)操作对应打开一个新页面，路由出栈(pop)操作对应页面关闭操作。
 
 ```dart
-//导航到新路由
+//  导航到新路由
 Navigator.push( context,
   MaterialPageRoute(builder: (context) {
     return NewRoute();
@@ -336,7 +336,7 @@ MaterialApp(
   theme: ThemeData(
     primarySwatch: Colors.blue,
   ),
-  //注册路由表 也可以单独写一个文件
+  //  注册路由表 也可以单独写一个文件
   routes:{
     "/":(context) => MyHomePage(title: 'Flutter Demo Home Page'), //注册首页路由
     "new_page":(context) => NewRoute(),
@@ -353,7 +353,9 @@ MaterialApp(
   //  Navigator.push(context,
   //  MaterialPageRoute(builder: (context) {
   //  return NewRoute();
-  //}));
+  //  }));
 ```
 
 ## 写到最后
+
+这篇文章其实也没有讲多么高深的东西，为的就是让大家对于 `Flutter` 的开发有一个大体上的认识（原来就是这样色儿的），那么文章的目的也就达到了。在接下来的 `Flutter` 系列当中会用以实际的业务场景，或者是某个通用的组件来详细 `Flutter` 具体的应用以及踩坑，期待下个系列吧。
