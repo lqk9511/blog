@@ -362,12 +362,12 @@ MaterialApp(
 
 使用命名路由的时候，跳转的方法有一点区别，返回的还是那样子的。
 
-```dart
-  Navigator.pushNamed(context, "new_page"); // 后面也可以用 arguments 传递参数
-  //  Navigator.push(context,
-  //  MaterialPageRoute(builder: (context) {
-  //  return NewRoute();
-  //  }));
+```diff
++ Navigator.pushNamed(context, "new_page"); // 后面也可以用 arguments 传递参数
+- Navigator.push(context,
+- MaterialPageRoute(builder: (context) {
+- return NewRoute();
+- }));
 ```
 
 ## 写到最后
