@@ -1,5 +1,7 @@
 # Flutter 系列之 web 入门
 
+<img src="https://github.com/lqk9511/gallery/blob/master/blog/flutter/banner/web.png?raw=true" alt="flutter web banner" width="100%" >
+
 本文主要讲如何从一个 web 开发者如何转变到 `Flutter` 项目，本文不会讲如何安装 `Flutter` ，如何调试 IDE，如何配置环境，诸如此类的。这些网上一搜一堆，如果有同学有需要可以在网上自取哦～
 
 `Flutter` 出来之后，大概在 `v1.12.13` 的这个版本的时候，我们做了一个公司内部 `CRM` 的 APP（纯 `Flutter` 项目，现在已经在线上运行），这次项目经历的周期很长，而且经手的同学也很多，也踩了很多的坑。 第二个项目是在 `v1.17.5` 的时候，后来到现在升级到，`v1.20.2`，这个项目是原生混合开发的模式，第一个小版本项目已经在线上运行，第二个小版本正在开发，运行良好。当然做 `Flutter` 中碰到了很多问题，这些问题，也都会在后续的 `Flutter` 系列中去一一告诉大家，敬请期待吧～
@@ -152,6 +154,16 @@ class _MyHomePageState extends State<MyHomePage> {
 ```
 
 我们可以看到，其实跟传统的 Web 实现起来还是有差别的，整个页面都是在类中实现的包括页面的状态啊，还有事件上面的处理等，细心的同学可能已经发现了 `MyHomePage` 跟 `MyApp` 类实现的时候继承的类是不同的，分别是继承了 `StatelessWidget` , `StatefulWidget`。我是这么理解的，相当于 Web 但页面应用比如 `Vue`，`React` 我们自己封装的**无状态**纯展示组件，和**有状态**组件的分别。
+
+在 `Flutter` 中是使用 `setState()`函数去注重触发页面刷新，重新渲染改变的数据的。
+
+```dart {2-4}
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+```
 
 `Flutter` 项目里面随处可见这样的 `class` 实现，大家可能也看到了，在画页面的时候好像都是一级一级的嵌套下去的。没错！`Flutter` 里面万物都是 `Widget`，也就引出了下面说的 —— 元素 也能叫 `Widget`
 
