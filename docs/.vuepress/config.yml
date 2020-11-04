@@ -51,6 +51,7 @@ themeConfig:
         children:
           - ''
           - web
+          - adaptation
     /interview/:
       - title: 面试
         collapsable: false
