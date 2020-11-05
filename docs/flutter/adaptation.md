@@ -73,8 +73,13 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_screen_adapter:
-    path: ../
+  flutter_screen_adapter: ^0.0.1
+```
+
+引入
+
+```dart
+import 'package:flutter_screen_adapter/flutter_screen_adapter.dart';
 ```
 
 初始化
@@ -139,7 +144,7 @@ static double get screenWidth;
 
 那么到这里就可以撑起我的油纸伞啦～不过也雨过天晴了。
 
-还有一个重要的点就是 测试小哥看到这里长舒一口气（保住了性命，同时放下了他手里的\*\*\*）。
+还有一个重要的点就是 测试小哥看到这里长舒一口气（保住了性命，同时拿开了架在我脖子上的\*\*\*）。
 
 最后再奉上我们的 Demo 图：
 
