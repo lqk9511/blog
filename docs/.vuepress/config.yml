@@ -21,6 +21,8 @@ themeConfig:
       link: /share/
     - text: 面试
       link: /interview/
+    - text: 设计模式
+      link: /design-mode/
     - text: GitHub
       link: https://github.com/lqk9511
   # 侧边栏
@@ -58,6 +60,14 @@ themeConfig:
         children:
           - ''
           - leetcode
+    /design-mode/:
+      - title: 设计模式
+        collapsable: false
+        children:
+        - ''
+        - strategy
+          - ''
+        - observer
   # repo: lqk9511/blog
   docsRepo: lqk9511/blog
   # git 源仓库 仓库分支

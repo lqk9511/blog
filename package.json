@@ -11,7 +11,8 @@
   "author": "Mr.li",
   "devDependencies": {
     "commitizen": "^4.0.3",
-    "cz-customizable": "^6.2.0"
+    "cz-customizable": "^6.2.0",
+    "vuepress": "^1.9.10"
   },
   "config": {
     "commitizen": {
