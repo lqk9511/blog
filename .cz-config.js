@@ -36,7 +36,13 @@ module.exports = {
     }
   ],
 
-  scopes: [],
+  scopes: [
+    {name: 'web'},
+    {name: 'flutter'},
+    {name: 'share'},
+    {name: 'interview'},
+    {name: 'design-mode'},
+  ],
 
   allowCustomScopes: true,
   allowBreakingChanges: ["feat", "fix"]
