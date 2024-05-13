@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeff</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 600px;
+        /* height: 700px; */
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        /* border: 2px solid black; */
+      }
+
+      .container div {
+        flex: 1 0 120px;
+        max-width: 120px;
+        height: 100px;
+        border: 1px solid red;
+        
+      }
+
+      .container2 {
+        width: 600px;
+        display: flex;
+      }
+
+      .container2 .left {
+        flex: 3;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        overflow: hidden;
+      }
+
+      .container2 .left>div {
+        flex: 1 0 100px;
+        height: 100px;
+        max-width: 120px;
+        border: 1px solid yellow;
+      }
+
+      .container2 .right {
+        flex: 2;
+        height: 200px;
+        border: 1px  solid  blue;
+      }
+
+      /* .left {
+        flex: 1 2 500px;
+        background: red;
+      }
+      .right {
+        flex: 2 1 400px;
+        background: blue;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- https://zhuanlan.zhihu.com/p/24372279 -->
+      <!-- left & right 计算方式 -->
+      <div class="left"></div>
+      <div class="right"></div>
+      <div class="right"></div>
+      <div class="right"></div>
+      <div class="right"></div>
+    </div>
+    <div class="container2">
+      <div class="left">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>

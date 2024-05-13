@@ -34,38 +34,40 @@ class LazyManClass {
   }
 
   sleepFirst(time) {
-    var fn = ((t) => () =>
+    let fn = () => {
       setTimeout(() => {
         console.log(`等待了${time}秒...`)
         this.next()
-      }, t * 1000))(time)
+      }, 1000 * time);
+    }
 
     this.tasks.unshift(fn)
     return this
   }
 
   sleep(time) {
-    var fn = ((t) => () =>
+    let fn = () => {
       setTimeout(() => {
         console.log(`等待了${time}秒...`)
         this.next()
-      }, t * 1000))(time)
+      }, time * 1000)
+    }
 
     this.tasks.push(fn)
     return this
   }
 
   eat(food) {
-    var fn = ((f) => () => {
-      console.log(`I am eating ${f}`)
+    let fn = () => {
+      console.log(`I am eating ${food}`)
       this.next()
-    })(food)
+    }
     this.tasks.push(fn)
     return this
   }
 
   next() {
-    var fn = this.tasks.shift()
+    let fn = this.tasks.shift()
     fn && fn()
   }
 }
